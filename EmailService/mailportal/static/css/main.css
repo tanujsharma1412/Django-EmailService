@@ -1,0 +1,27 @@
+body{
+    background-image: linear-gradient(to right, #D38300 , #A83250);
+}
+.col {
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: center;
+    margin: auto;
+    width: fit-content;
+  padding: 10px;
+}
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.7); 
+  padding: 30px;
+  background-color: #f1f1f1;
+  border-radius: 10px;
+  width: 70%;
+  }
+  .heading{
+      font-weight: bold;
+      font-family: cursive;
+      text-align: center;
+      font-size: 30px;
+      color: azure;
+  }

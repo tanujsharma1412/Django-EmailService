@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+
+{% block head %}
+
+<title> Email Service </title>
+{% endblock %}
+
+
+{% block body %}
+    <div class="heading">Email Service</div>
+        <div class="row">
+            <div class="col">
+                <div class="card">
+                    <form name="myForm" method="POST" action = "{% url 'index' %}">
+                        
+                        Email id :
+                        {% csrf_token %}
+                        <input type="email" id="email" name = "email" multiple><br><br>
+                        Content: 
+                        <textarea type="text" name="content" id="content" ></textarea><br><br>
+                        <input type="submit"value="Submit">
+                    
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+{% endblock %}
