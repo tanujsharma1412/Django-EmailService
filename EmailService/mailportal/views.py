@@ -14,7 +14,7 @@ def index(request):
     if(request.method == "POST"):
         emails = request.POST['email']
         emails = emails.split(",")
-        # print(type(emails), "----------------------------------------------------")
+        # print(type(emails), "--------------------------------------------------")
 
         mailbody = request.POST["content"]
         
