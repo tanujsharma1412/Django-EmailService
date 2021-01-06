@@ -1,0 +1,17 @@
+asgiref==3.3.1
+certifi==2020.12.5
+chardet==4.0.0
+Django==3.1.5
+django-sendgrid-v5==0.9.0
+djangorestframework==3.12.2
+future==0.18.2
+idna==2.10
+mailjet-rest==1.3.4
+python-dotenv==0.15.0
+python-http-client==3.3.1
+pytz==2020.5
+requests==2.25.1
+sendgrid==6.4.8
+sqlparse==0.4.1
+starkbank-ecdsa==1.1.0
+urllib3==1.26.2
