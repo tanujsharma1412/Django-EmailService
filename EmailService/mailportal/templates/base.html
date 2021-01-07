@@ -5,10 +5,24 @@
 {% block head %} {% endblock %}
 
 <link rel="stylesheet" href="{% static 'css/main.css' %}">
+
+
 </head>
     <body>
-        {% block body %}
-        {%endblock%}
+        
+        <div class="heading" href="{% url 'index'%}">Email Service</div>
+            <div class="row">
+                <div class="col">
+                    <div class="card">
+                        
+                        {% block body %}{%endblock%}
+                            
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        
     
     </body>
 </html>

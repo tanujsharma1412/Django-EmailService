@@ -7,23 +7,15 @@
 
 
 {% block body %}
-    <div class="heading">Email Service</div>
-        <div class="row">
-            <div class="col">
-                <div class="card">
-                    <form name="myForm" method="POST" action = "{% url 'index' %}">
-                        
-                        Email id :
-                        {% csrf_token %}
-                        <input type="email" id="email" name = "email" multiple><br><br>
-                        Content: 
-                        <textarea type="text" name="content" id="content" ></textarea><br><br>
-                        <input type="submit"value="Submit">
-                    
-                    </form>
-                </div>
-            </div>
-        </div>
-    </div>
+    <form name="myForm" method="POST" action = "{% url 'index' %}">
+        Email id:
+        {% csrf_token %}
+        <input type="email" id="email" name = "email" placeholder = "Enter Email id" size = "35" multiple required><br><br>
+        Subject:
+        <input type="text" id="subject" name = "subject" placeholder = "Enter Subject" size = "35" required><br><br>
+        Content: 
+        <textarea type="text" name="content" id="content" placeholder = "Enter Content" rows="10" cols="35" required></textarea><br><br>
+        <input type="submit"value="Submit">
+    </form>
 
 {% endblock %}
